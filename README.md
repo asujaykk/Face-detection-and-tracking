@@ -33,14 +33,14 @@ Here we are using jetson nano developement board as master computer and two rasp
         Opencv is pre installed in jetson SDK. So no need to install it explicitly.
   
   ## Running the face tracker.
-  1. First connect 'Stereo_Camera_System' (arduino board) to jetson nano via usb cable.
-  2. Connect LEFT camera to CAM0 CSI port.
-  3. Connect RIGHT camera to CAM1 CSI port.
-  4. Open terminal and navigate to your working directory
-  5. Open Face-detection-and-tracking directory:
+  First connect 'Stereo_Camera_System' (arduino board) to jetson nano via usb cable.
+  Connect LEFT camera to CAM0 CSI port.
+  Connect RIGHT camera to CAM1 CSI port.
+  1. Open terminal and navigate to your working directory
+  2. Open Face-detection-and-tracking directory:
        
           cd Face-detection-and-tracking
-  6. Run the following command to start face tracking process.
+  3. Run the following command to start face tracking process.
        
           python3 visual_fast_with_depth.py
       
@@ -54,6 +54,7 @@ Here we are using jetson nano developement board as master computer and two rasp
       
       Then again run 'visual_fast_with_depth.py'
    
-  
+   4. The two camera view will be shown in two windows.
+   5. 
   
   
