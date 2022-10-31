@@ -1,4 +1,5 @@
-# Face-detection-and-tracking
+# Stereo Vision Depth Estimator
+
 This is a small project to detect faces from a camera image and also track the face based on the movement in the vision region. 
 
 ## Setting up the environment:
