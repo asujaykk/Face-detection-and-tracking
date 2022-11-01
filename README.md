@@ -47,11 +47,11 @@ Here we are using jetson nano developement board as master computer and two rasp
        
           python3 visual_fast_with_depth.py
       
-      If you are getting permission ierror with serial port, then please run below command .
+      If you are getting permission error with serial port, then please run below command .
       
           sudo chmod 666 /dev/ttyACM0
        
-      Also restart the 'nvargus-daemon' with below command. to release the two camera instances which was not closed properly in the efirst run. 
+      Also restart the 'nvargus-daemon' with below command. to release the two camera instances which was not closed properly in the first run. 
       
           sudo systemctl restart nvargus-daemon
       
