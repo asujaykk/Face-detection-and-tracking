@@ -45,7 +45,7 @@ Here we are using jetson nano developement board as master computer and two rasp
           cd Face-detection-and-tracking
   3. Run the following command to start face tracking process.
        
-          python3 visual_fast_with_depth.py
+          python3 face_tracker.py
       
       If you are getting permission error with serial port, then please run below command .
       
@@ -55,9 +55,9 @@ Here we are using jetson nano developement board as master computer and two rasp
       
           sudo systemctl restart nvargus-daemon
       
-      Then again run 'visual_fast_with_depth.py'
+      Then again run 'face_tracker.py'
    
    4. The two camera view will be shown in two windows.
-   5. 
+    
   
   
