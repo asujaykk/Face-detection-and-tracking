@@ -1,6 +1,6 @@
 # Face-detection-and-tracking
 
-This is a small project to detect faces from a camera image and also track the face based on the movement in the vision region. 
+This is a basic project to demonstrate a face detection and tracking system using python and opencv on a jetson nano developement board.
 
 ## Setting up the environment:
 
@@ -12,12 +12,12 @@ This is a small project to detect faces from a camera image and also track the f
 2. Two raspberry pi v2 8MP camera.
 3. A stereo camera actuator system.
 
-Here we are using jetson nano developement board as master computer and two raspberry pi v2 camera for recording images. We can connect two CSI camera to jetson nano, since Jetson nano b01 support two CSI camera port. 
+Here we are using jetson nano developement board as master computer and two raspberry pi v2 camera for capturing images. We can connect two CSI camera to jetson nano b01, since it support two CSI camera port. 
   
   The next important part is the servo  assisted stereo camera holder to achive pan and tilt movement of the camera. For this we will be using the "Stereo_Camera_Actuator" system. Please refer this repository  https://github.com/asujaykk/Stereo_Camera_Actuator to build one.
   
-  ### Software requirements:
-  The code is completely writen in python. Once you boot your jetson nano developement board. we need to install the following modules and libraries.
+  ### Software requirements: 
+  First boot your jetson nano developement board with latest JDK. Then we need to install the following modules and libraries.
   1. First clone this repository to your working directory.
           
           git clone https://github.com/asujaykk/Face-detection-and-tracking.git
@@ -55,9 +55,17 @@ Here we are using jetson nano developement board as master computer and two rasp
       
           sudo systemctl restart nvargus-daemon
       
-      Then again run 'face_tracker.py'
+      Then again run 'python3 face_tracker.py'
    
-   4. The two camera view will be shown in two windows.
+   4. If the system is working fine, then you will receive the folloing messages on the terminal.  
+       *SCA initializing...*  
+       *SCA initialized.*
+       
+       After this message, two camera stream window will appear (one for left camera and another for right camera).
+       If there is any face detected in the frame, then the  overall system will continously track that face until the face leave the visible range of the camera. 
+   
+   6. The following GIF shows the output of the detection and tracking system.
+   
     
   
   
