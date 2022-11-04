@@ -64,8 +64,9 @@ Here we are using jetson nano developement board as master computer and two rasp
        After this message, two camera stream window will appear (one for left camera and another for right camera).
        If there is any face detected in the frame, then the  overall system will continously track that face until the face leave the visible range of the camera. 
    
-   6. The following GIF shows the output of the detection and tracking system.
-   
+   6. The following GIF shows the output of the detection and tracking system. 
+   ![20221105_010505](https://user-images.githubusercontent.com/78997596/200060611-66d617e3-8d94-4264-a370-3359ee19adcd.gif)
+
     
   
   
